@@ -1,0 +1,18 @@
+Package: glmmsel
+Type: Package
+Title: Generalised Linear Mixed Model Selection
+Version: 1.0.0
+Authors@R: person("Ryan", "Thompson",  email = "ryan.thompson-1@uts.edu.au", role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0002-9002-0448"))
+Description: Provides tools for generalised linear mixed model selection.
+URL: https://github.com/ryan-thompson/glmmsel
+BugReports: https://github.com/ryan-thompson/glmmsel/issues
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: ggplot2, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, knitr, rmarkdown, lme4, MASS, nlme
+VignetteBuilder: knitr
+Config/testthat/edition: 3
