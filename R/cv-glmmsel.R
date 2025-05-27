@@ -251,6 +251,8 @@ predict.cv.glmmsel <- \(object, x.new, cluster.new, lambda = 'lambda.min', ...) 
 #' @param x an object of class \code{cv.glmmsel}
 #' @param ... any other arguments
 #'
+#' @return A plot of the cross-validation results.
+#'
 #' @method plot cv.glmmsel
 #'
 #' @export

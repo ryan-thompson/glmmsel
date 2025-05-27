@@ -1,3 +1,6 @@
+This is a resubmission addressing all issues raised previously, except for the missing reference 
+issue, as the corresponding paper is forthcoming and not yet available online.
+
 ## Test environments
 * ubuntu 24.04, R 4.5.0
 * win-builder (release and devel)
@@ -10,3 +13,4 @@
     ‘-mno-omit-leaf-frame-pointer’
 
 * This note only appears on the Ubuntu test environment and is due to use of Rcpp.
+

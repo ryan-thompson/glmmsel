@@ -1,10 +1,13 @@
 Package: glmmsel
 Type: Package
 Title: Generalised Linear Mixed Model Selection
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: person("Ryan", "Thompson",  email = "ryan.thompson-1@uts.edu.au", role = c("aut", "cre"), 
     comment = c(ORCID = "0000-0002-9002-0448"))
-Description: Provides tools for generalised linear mixed model selection.
+Description: Provides tools for fitting sparse generalised linear mixed models with l0 
+  regularisation. Selects fixed and random effects under the hierachy constraint that fixed effects 
+  must precede random effects. Uses coordinate descent and local search algorithms to rapidly 
+  deliver near-optimal estimates. Gaussian and binomial response families are currently supported.
 URL: https://github.com/ryan-thompson/glmmsel
 BugReports: https://github.com/ryan-thompson/glmmsel/issues
 License: GPL-3

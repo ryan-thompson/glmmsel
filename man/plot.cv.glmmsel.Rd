@@ -11,6 +11,9 @@
 
 \item{...}{any other arguments}
 }
+\value{
+A plot of the cross-validation results.
+}
 \description{
 Plot the cross-validation loss as a function of the regularisation parameter.
 }
