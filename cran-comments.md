@@ -1,5 +1,4 @@
-This is a resubmission addressing all issues raised previously, except for the missing reference 
-issue, as the corresponding paper is forthcoming and not yet available online.
+This is a resubmission addressing all issues raised previously.
 
 ## Test environments
 * ubuntu 24.04, R 4.5.0
