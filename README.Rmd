@@ -50,3 +50,6 @@ fit <- cv.glmmsel(x, y, cluster)
 coef(fit)
 ```
 
+## Documentation
+
+See the package [vignette](https://CRAN.R-project.org/package=glmmsel/vignettes/vignette.html) or [reference manual](https://CRAN.R-project.org/package=glmmsel/glmmsel.pdf).
