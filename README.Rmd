@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = T)
 
 ## Overview
 
-An R package for generalised linear mixed model (GLMM) selection. `glmmsel` uses an $\ell_0$ regulariser to simultaneously select fixed and random effects. A hierarchical constraint is included that a random effect cannot be selected unless its corresponding fixed effect is also selected. Gaussian and binomial families are currently supported.
+An R package for generalised linear mixed model (GLMM) selection. `glmmsel` uses an $\ell_0$ regulariser to simultaneously select fixed and random effects. A hierarchical constraint is included that a random effect cannot be selected unless its corresponding fixed effect is also selected. Gaussian and binomial families are currently supported. See [this paper](https://arxiv.org/abs/2506.20425) for more information.
 
 ## Installation
 

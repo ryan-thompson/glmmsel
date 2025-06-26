@@ -29,6 +29,11 @@
 #' \item{lambda.min}{the value of \code{lambda} minimising \code{cv.mean}}
 #' \item{fit}{the fit from running \code{glmmsel()} on the full data}
 #'
+#' @references Thompson, R., Wand, M. P., and Wang, J. J. J. (2025). 'Scalable subset selection in
+#' linear mixed models'. arXiv: \href{https://arxiv.org/abs/2506.20425}{2506.20425}.
+#'
+#' @example R/examples/example-cv-glmmsel.R
+#'
 #' @export
 
 cv.glmmsel <- \(

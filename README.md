@@ -10,7 +10,8 @@ An R package for generalised linear mixed model (GLMM) selection.
 `glmmsel` uses an $\ell_0$ regulariser to simultaneously select fixed
 and random effects. A hierarchical constraint is included that a random
 effect cannot be selected unless its corresponding fixed effect is also
-selected. Gaussian and binomial families are currently supported.
+selected. Gaussian and binomial families are currently supported. See
+[this paper](https://arxiv.org/abs/2506.20425) for more information.
 
 ## Installation
 
@@ -48,11 +49,11 @@ fit <- glmmsel(x, y, cluster)
 coef(fit, lambda = 10)
 ```
 
-    ##           [,1]      [,2]     [,3] [,4] [,5] [,6]
-    ## [1,] 0.0780456 0.1021238 1.115887    0    0    0
-    ## [2,] 0.0780456 1.9017289 1.115887    0    0    0
-    ## [3,] 0.0780456 1.9836432 1.115887    0    0    0
-    ## [4,] 0.0780456 1.1612897 1.115887    0    0    0
+    ##             [,1]     [,2]     [,3] [,4] [,5] [,6]
+    ## [1,] -0.12410477 1.128917 1.053438    0    0    0
+    ## [2,]  0.15875835 1.128917 1.053438    0    0    0
+    ## [3,] -0.01088924 1.128917 1.053438    0    0    0
+    ## [4,]  0.09670996 1.128917 1.053438    0    0    0
 
 ``` r
 # Cross-validate the ℓ0 regularisation path
@@ -60,11 +61,11 @@ fit <- cv.glmmsel(x, y, cluster)
 coef(fit)
 ```
 
-    ##           [,1]      [,2]     [,3] [,4] [,5] [,6]
-    ## [1,] 0.0780456 0.1021238 1.115887    0    0    0
-    ## [2,] 0.0780456 1.9017289 1.115887    0    0    0
-    ## [3,] 0.0780456 1.9836432 1.115887    0    0    0
-    ## [4,] 0.0780456 1.1612897 1.115887    0    0    0
+    ##             [,1]     [,2]     [,3] [,4] [,5] [,6]
+    ## [1,] -0.12410477 1.128917 1.053438    0    0    0
+    ## [2,]  0.15875835 1.128917 1.053438    0    0    0
+    ## [3,] -0.01088924 1.128917 1.053438    0    0    0
+    ## [4,]  0.09670996 1.128917 1.053438    0    0    0
 
 ## Documentation
 

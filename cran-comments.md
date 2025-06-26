@@ -1,7 +1,7 @@
 This is a resubmission addressing all issues raised previously.
 
 ## Test environments
-* ubuntu 24.04, R 4.5.0
+* ubuntu 24.04, R 4.5.1
 * win-builder (release and devel)
 
 ## R CMD check results

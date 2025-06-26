@@ -142,6 +142,10 @@ ranef(fit, lambda = 10)
 coef(fit, lambda = 10)
 predict(fit, x[1:3, ], cluster[1:3], lambda = 10)
 }
+\references{
+Thompson, R., Wand, M. P., and Wang, J. J. J. (2025). 'Scalable subset selection in
+linear mixed models'. arXiv: \href{https://arxiv.org/abs/2506.20425}{2506.20425}.
+}
 \author{
 Ryan Thompson <ryan.thompson-1@uts.edu.au>
 }

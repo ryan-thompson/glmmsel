@@ -63,6 +63,9 @@
 #' \item{intercept}{whether a fixed intercept is included in the model}
 #' \item{random.intercept}{whether a random intercept is included in the model}
 #'
+#' @references Thompson, R., Wand, M. P., and Wang, J. J. J. (2025). 'Scalable subset selection in
+#' linear mixed models'. arXiv: \href{https://arxiv.org/abs/2506.20425}{2506.20425}.
+#'
 #' @example R/examples/example-glmmsel.R
 #'
 #' @export

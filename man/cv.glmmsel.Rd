@@ -56,6 +56,32 @@ An object of class \code{cv.glmmsel}; a list with the following components:
 Fits the regularisation path for a sparse generalised linear mixed model and then
 cross-validates this path.
 }
+\examples{
+# Generate data
+set.seed(1234)
+n <- 100
+m <- 4
+p <- 10
+s <- 5
+x <- matrix(rnorm(n * p), n, p)
+beta <- c(rep(1, s), rep(0, p - s))
+u <- cbind(matrix(rnorm(m * s), m, s), matrix(0, m, p - s))
+cluster <- sample(1:m, n, replace = TRUE)
+xb <- rowSums(x * sweep(u, 2, beta, '+')[cluster, ])
+y <- rnorm(n, xb)
+
+# Fit sparse linear mixed model
+fit <- cv.glmmsel(x, y, cluster)
+plot(fit)
+fixef(fit)
+ranef(fit)
+coef(fit)
+predict(fit, x[1:3, ], cluster[1:3])
+}
+\references{
+Thompson, R., Wand, M. P., and Wang, J. J. J. (2025). 'Scalable subset selection in
+linear mixed models'. arXiv: \href{https://arxiv.org/abs/2506.20425}{2506.20425}.
+}
 \author{
 Ryan Thompson <ryan.thompson-1@uts.edu.au>
 }
